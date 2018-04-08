@@ -1,0 +1,19 @@
+{
+  "name": "products",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "products",
+    "filters"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-serve": "^0.1.6"
+  }
+}

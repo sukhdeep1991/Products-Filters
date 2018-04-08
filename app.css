@@ -1,0 +1,98 @@
+body{
+    display: flex;
+    background: #f1f3f6;
+}
+.filters-container {
+    width: 30%;
+    margin: 0 15px 0 0;
+}
+.filters {
+    background: white;
+    box-shadow: 2px 1px 3px 1px #cecece;
+    position: fixed;
+    top: 10px;
+    width: 20%;
+    padding: 0 18px;
+}
+.filters .inline-field {
+    width: 250px;
+    padding: 20px;
+    border-bottom: 1px solid #c3c3c3;
+    color: #bdb9b9;
+}
+.filters .inline-field label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #000;
+}
+#color-checkbox-list label {
+    cursor: pointer;
+    width: 130px;
+}
+#color-checkbox-list input {
+    vertical-align: middle;
+}
+span.color-preview {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+.results {
+    padding: 20px;
+    background: white;
+    box-shadow: 2px 1px 3px 1px #cecece;
+    width: 100%;
+}
+.product-details {
+    width: 350px;
+    height: 275px;
+    display: inline-block;
+}
+span.product-title {
+    font-weight: 700;
+    display: block;
+}
+span.product-rating {
+    display: block;
+    background: #388e3c;
+    width: 40px;
+    color: white;
+    padding: 2px 5px;
+    margin-top: 5px;
+    position: relative;
+}
+span.product-rating > img {
+    width: 15px;
+    height: 15px;
+    vertical-align: text-bottom;
+    position: absolute;
+    top: 3px;
+    right: 4px;
+}
+
+span.price-info span.final {
+    font-weight: bold;
+}
+span.price-info span.mrp {
+    font-weight: 400;
+    color: #bdb9b9;
+    text-decoration: line-through;
+}
+span.price-info span.discount {
+    color: green;
+    font-weight: 900;
+    margin-left: 5px;
+}

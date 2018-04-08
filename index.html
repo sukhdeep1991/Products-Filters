@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="nui">
+    <head>
+        <link rel="stylesheet" href="app.css" >
+    </head>
+    <body>
+        <div class="filters-container">
+            <div class="filters">
+                <form>
+                    <div class="inline-field">
+                        <label>PRICE</label>
+                        <select id="min-price-select">
+                        </select> to
+                        <select id="max-price-select">
+                        </select>
+                    </div>
+                    <div class="inline-field">
+                        <label>BRAND</label>
+                        <input type="text" placeholder="Search Brand">
+                    </div>
+                    <div class="inline-field">
+                        <label>COLOR</label>
+                        <div id="color-checkbox-list">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="results">
+            <h3 id="result-info"></h3>
+            <div class="sort-options">
+                <span>Sort By</span>
+                <a href="javascript:void;" id="relevance-sort">Relevance</a>
+                <a href="javascript:void;" id="price-low-sort">Price - Low to High</a>
+                <a href="javascript:void;" id="price-high-sort">Price - High to low</a>
+            </div>
+            <div id="product-list">
+            </div>
+        </div>
+    </body>
+    <script id="product-details-template" type="text/template">
+        <div class="product-details">
+            <img src="{{image}}">
+            <span class="product-title">{{title}}</span>
+            <span class="product-rating">{{rating}} <img src="star.png" ></span>
+            <span class="price-info">
+                <span class="final">{{finalPrice}}</span>
+                <span class="mrp">{{mrp}}</span>
+                <span class="discount">{{discount}}</span>
+            </span>
+        </div>
+    </script>
+    <script id="color-checkbox-template" type="text/template">
+        <label for="{{title}}">
+            <input type="checkbox" id="{{title}}" value="{{colorCode}}" />
+            <span class="color-preview" style="background: {{colorCode}};"></span>
+            {{title}}
+        </label>
+    </script>
+    <script type="text/javascript" src="app.js"></script>
+</html>
